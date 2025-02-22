@@ -10,8 +10,8 @@ export default function Education() {
   const slides = [
     { id: "1", image: require("../assets/NCF.jpg"), title: "School 1" },
     { id: "2", image: require("../assets/ACLC.jpg"), title: "School 2" },
-    { id: "2", image: require("../assets/SAGURONG.jpg"), title: "School 3"},
-    { id: "3", image: require("../assets/SAGURONGELEM.jpg"), title: "School 4"},
+    { id: "3", image: require("../assets/SAGURONG.jpg"), title: "School 3"},
+    { id: "4 ", image: require("../assets/SAGURONGELEM.jpg"), title: "School 4"},
   ];
 
   return (
