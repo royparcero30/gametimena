@@ -1,51 +1,67 @@
-import React, { useRef } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import PhoneInput from 'react-native-phone-number-input';
+import { Text, View, StyleSheet, ImageBackground, TouchableOpacity, Linking } from "react-native";
 
-const Contact: React.FC = () => {
-  const phoneInput = useRef<PhoneInput | null>(null);
+export default function Contact() {
+  const openURL = (url) => {
+    Linking.openURL(url);
+  };
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>My Contact</Text>
-      <PhoneInput
-        ref={phoneInput}
-        defaultValue=""
-        defaultCode="US"
-        layout="first"
-        onChangeFormattedText={(text) => {
-          console.log(text);
-        }}
-        withShadow
-        autoFocus
-        containerStyle={styles.phoneInputContainer}
-        textContainerStyle={styles.textInput}
-      />
-    </View>
+    <ImageBackground 
+      source={require('../assets/BLACKBG.jpg')}
+      style={styles.container}
+      resizeMode="cover"
+    >
+      <View style={styles.contentContainer}>
+        <Text style={styles.header}>Contact</Text>
+        <View style={styles.linksContainer}>
+          <TouchableOpacity onPress={() => openURL('https://www.facebook.com/eggwadough')}>
+            <Text style={styles.link}>Facebook</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => openURL('https://github.com/Eduardonayawan')}>
+            <Text style={styles.link}>GitHub</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => openURL('https://www.instagram.com/edrdnywn')}>
+            <Text style={styles.link}>Instagram</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => openURL('mailto:enayawan@gbox.ncf.edu.ph')}>
+            <Text style={styles.link}>Email</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </ImageBackground>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#25292e',
+    width: '100%',
+    height: '100%',
+  },
+  contentContainer: {
+    flex: 1,
+    padding: 20,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  text: {
+  header: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 40,
     color: '#fff',
-    marginBottom: 10,
   },
-  phoneInputContainer: {
-    width: '80%',
-    backgroundColor: '#fff',
+  linksContainer: {
+    backgroundColor: 'rgba(80,80,80,0.8)',
+    padding: 20,
     borderRadius: 10,
-    padding: 10,
+    width: '80%',
+    alignItems: 'center',
   },
-  textInput: {
-    paddingVertical: 0,
+  link: {
+    fontSize: 18,
+    color: '#fff',
+    marginVertical: 10,
+    textDecorationLine: 'underline',
   },
 });
-
-export default Contact;
-            

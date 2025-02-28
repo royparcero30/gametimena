@@ -1,91 +1,92 @@
-import React, { useRef } from "react";
-import { Text, View, StyleSheet, Animated, Dimensions } from "react-native";
-
-
-const { width } = Dimensions.get("window");
-const slideWidth = 300; // width of each slide
+import { Text, View, StyleSheet, Image, ScrollView, ImageBackground } from "react-native";
 
 export default function Education() {
-  const scrollX = useRef(new Animated.Value(0)).current;
-
-  const slides = [
-    { id: "1", image: require("./assets/NCF.jpg"), title: "School 1" },
-    { id: "2", image: require("./assets/ACLC.jpg"), title: "School 2" },
-    { id: "3", image: require("./assets/SAGURONG.jpg"), title: "School 3"},
-    { id: "4 ", image: require("./assets/SAGURONGELEM.jpg"), title: "School 4"},
-  ];
-
   return (
-    <View style={styles.container}>
-      <Text style={styles.heading}>My Education</Text>
-      <Animated.ScrollView
-        horizontal
-        pagingEnabled
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.slider}
-        onScroll={Animated.event(
-          [{ nativeEvent: { contentOffset: { x: scrollX } } }],
-          { useNativeDriver: true }
-        )}
-        scrollEventThrottle={16}
-      >
-        {slides.map((slide, index) => {
-          const scale = scrollX.interpolate({
-            inputRange: [
-              (index - 1) * slideWidth,
-              index * slideWidth,
-              (index + 1) * slideWidth,
-            ],
-            outputRange: [0.8, 1, 0.8],
-            extrapolate: "clamp",
-          });
-          return (
-            <View key={slide.id} style={[styles.slide, { width: slideWidth }]}>
-              <Animated.Image
-                source={slide.image}
-                style={[styles.logo, { transform: [{ scale }] }]}
-                resizeMode="contain"
-              />
-              <Text style={styles.slideText}>{slide.title}</Text>
-            </View>
-          );
-        })}
-      </Animated.ScrollView>
-    </View>
+    <ImageBackground 
+      source={require('../assets/BLACKBG.jpg')}  
+      style={styles.container}
+      resizeMode="cover" 
+    >
+      <ScrollView contentContainerStyle={styles.scrollContainer}>
+        <Text style={styles.header}>My Education</Text>
+
+        <View style={styles.schoolContainer}>
+          <Image 
+            source={require('../assets/SAGURONGELEM.jpg')}  
+            style={styles.schoolLogo}
+          />
+          <Text style={styles.schoolName}>📚 Elementary</Text>
+          <Text style={styles.schoolDescription}>
+            Graduated from Doña Soledad Marasigan Elementary School (2009), where curiosity for learning first sparked.
+          </Text>
+        </View>
+
+        <View style={styles.schoolContainer}>
+          <Image 
+            source={require('../assets/SAGURONG.jpg')}  
+            style={styles.schoolLogo}
+          />
+          <Text style={styles.schoolName}>🎓 High School</Text>
+          <Text style={styles.schoolDescription}>
+            Continued growing at Sagurong High School, graduating in 2014 a chapter that fueled my problem-solving mindset.
+          </Text>
+        </View>
+
+        <View style={styles.schoolContainer}>
+          <Image 
+            source={require('../assets/NCF.jpg')}  
+            style={styles.schoolLogo}
+          />
+          <Text style={styles.schoolName}>💻 College</Text>
+          <Text style={styles.schoolDescription}>
+            Now pursuing BSCS at Naga College Foundation (2nd year), diving deep into programming, algorithms, and tech innovation. Every project and line of code brings me closer to my goal: building solutions that make a difference.
+          </Text>
+        </View>
+      </ScrollView>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#25292e",
-    justifyContent: "center",
-    alignItems: "center",
+    width: '100%',
+    height: '100%',
   },
-  heading: {
-    color: "#fff",
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 20,
+  scrollContainer: {
+    flexGrow: 1,
+    padding: 20,
   },
-  slider: {
-    alignItems: "center",
+  header: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 40,
+    color: '#fff',
   },
-  slide: {
-    height: 300,
-    backgroundColor: "#333",
+  schoolContainer: {
+    backgroundColor: 'rgba(80,80,80,0.8)', // Greyish tone
+    padding: 20,
     borderRadius: 10,
-    justifyContent: "center",
-    alignItems: "center",
-    marginHorizontal: 10,
+    alignItems: 'center',
+    marginBottom: 40,
   },
-  logo: {
-    width: 100,
-    height: 100,
+  schoolLogo: {
+    width: 120,
+    height: 120,
+    borderRadius: 15,
     marginBottom: 10,
   },
-  slideText: {
-    color: "#fff",
+  schoolName: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginBottom: 10,
+  },
+  schoolDescription: {
     fontSize: 16,
+    color: '#fff',
+    textAlign: 'center',
+    lineHeight: 24,
   },
 });
