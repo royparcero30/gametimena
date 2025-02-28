@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Text, View, StyleSheet, Animated, Dimensions } from "react-native";
 
+
 const { width } = Dimensions.get("window");
 const slideWidth = 300; // width of each slide
 
@@ -8,10 +9,10 @@ export default function Education() {
   const scrollX = useRef(new Animated.Value(0)).current;
 
   const slides = [
-    { id: "1", image: require("../assets/NCF.jpg"), title: "School 1" },
-    { id: "2", image: require("../assets/ACLC.jpg"), title: "School 2" },
-    { id: "3", image: require("../assets/SAGURONG.jpg"), title: "School 3"},
-    { id: "4 ", image: require("../assets/SAGURONGELEM.jpg"), title: "School 4"},
+    { id: "1", image: require("./assets/NCF.jpg"), title: "School 1" },
+    { id: "2", image: require("./assets/ACLC.jpg"), title: "School 2" },
+    { id: "3", image: require("./assets/SAGURONG.jpg"), title: "School 3"},
+    { id: "4 ", image: require("./assets/SAGURONGELEM.jpg"), title: "School 4"},
   ];
 
   return (
