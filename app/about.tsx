@@ -8,7 +8,7 @@ export default function About() {
     >
       <View style={styles.textContainer}>
         <Text style={styles.text}>
-        Hi! I’m Eduardo Nayawan Jr., a second-year BSCS student at Naga College Foundation, driven by curiosity and a love for tech. I thrive on exploring programming, software development, and innovative solutions, sharpening my skills in algorithms and emerging technologies through hands-on projects. Let’s connect, build, and shape the future of tech—always coding, always learning! 🚀
+        Hi! my name is ROY B. PARCERO., a second-year BSCS student OF Naga College Foundation, Im dedicated student with a dream to be a successfull man in the future.
         </Text>
       </View>
     </ImageBackground>

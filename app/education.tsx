@@ -17,7 +17,7 @@ export default function Education() {
           />
           <Text style={styles.schoolName}>📚 Elementary</Text>
           <Text style={styles.schoolDescription}>
-            Graduated from Doña Soledad Marasigan Elementary School (2009), where curiosity for learning first sparked.
+            Graduated at conception grande Elementary school.
           </Text>
         </View>
 
@@ -28,7 +28,18 @@ export default function Education() {
           />
           <Text style={styles.schoolName}>🎓 High School</Text>
           <Text style={styles.schoolDescription}>
-            Continued growing at Sagurong High School, graduating in 2014 a chapter that fueled my problem-solving mindset.
+            I Graduated at SAGURONG High school at junior high.
+          </Text>
+        </View>
+
+        <View style={styles.schoolContainer}>
+          <Image 
+            source={require('../assets/SAGURONG.jpg')}  
+            style={styles.schoolLogo}
+          />
+          <Text style={styles.schoolName}>🎓 denior High School</Text>
+          <Text style={styles.schoolDescription}>
+            I Graduated at ACLC NAGA in senior high.
           </Text>
         </View>
 
@@ -39,7 +50,7 @@ export default function Education() {
           />
           <Text style={styles.schoolName}>💻 College</Text>
           <Text style={styles.schoolDescription}>
-            Now pursuing BSCS at Naga College Foundation (2nd year), diving deep into programming, algorithms, and tech innovation. Every project and line of code brings me closer to my goal: building solutions that make a difference.
+            Now im studen at Naga College Foundation BSCS is my course (2nd year), and iwant to grow as a student to understand programming using my school and be a frontend developer at a future.
           </Text>
         </View>
       </ScrollView>

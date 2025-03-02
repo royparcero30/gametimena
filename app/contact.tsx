@@ -14,16 +14,13 @@ export default function Contact() {
       <View style={styles.contentContainer}>
         <Text style={styles.header}>Contact</Text>
         <View style={styles.linksContainer}>
-          <TouchableOpacity onPress={() => openURL('https://www.facebook.com/eggwadough')}>
+          <TouchableOpacity onPress={() => openURL('https://www.facebook.com/roy.parcero')}>
             <Text style={styles.link}>Facebook</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => openURL('https://github.com/Eduardonayawan')}>
+          <TouchableOpacity onPress={() => openURL('https://github.com/royparcero30')}>
             <Text style={styles.link}>GitHub</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => openURL('https://www.instagram.com/edrdnywn')}>
-            <Text style={styles.link}>Instagram</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => openURL('mailto:enayawan@gbox.ncf.edu.ph')}>
+          <TouchableOpacity onPress={() => openURL('mailto:rparcero#gbox.ncf,edu.ph')}>
             <Text style={styles.link}>Email</Text>
           </TouchableOpacity>
         </View>
