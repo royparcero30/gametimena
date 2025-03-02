@@ -10,39 +10,16 @@ export default function Hobbies() {
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <Text style={styles.header}>My Hobbies</Text>
 
-        <View style={styles.hobbyContainer}>
-          <Image 
-            source={require('../assets/GAMING.jpg')}  
-            style={styles.hobbyImage}
-            resizeMode="cover"
-          />
-          <Text style={styles.hobbyTitle}>🎮 Gaming</Text>
-          <Text style={styles.hobbyDescription}>
-            I love diving into strategy games and RPGs, where quick thinking and teamwork shine. Whether conquering virtual worlds or solving puzzles, gaming sharpens my focus and reminds me that even setbacks can level up resilience.
-          </Text>
-        </View>
 
         <View style={styles.hobbyContainer}>
           <Image 
-            source={require('../assets/READING.jpg')}  
+            source={require('../assets/BASKETBALL.jpg')}  
             style={styles.hobbyImage}
             resizeMode="cover"
           />
-          <Text style={styles.hobbyTitle}>📚 Reading</Text>
+          <Text style={styles.hobbyTitle}>PLAYING BASKETBALL</Text>
           <Text style={styles.hobbyDescription}>
-            Sci-fi novels and tech journals are my go-to escapes. They spark creativity and offer fresh perspectives—like how futuristic ideas in books often mirror real-world tech innovations I study.
-          </Text>
-        </View>
-
-        <View style={styles.hobbyContainer}>
-          <Image 
-            source={require('../assets/CODING.jpg')}  
-            style={styles.hobbyImage}
-            resizeMode="cover"
-          />
-          <Text style={styles.hobbyTitle}>💻 Programming</Text>
-          <Text style={styles.hobbyDescription}>
-            Coding is my playground! From building simple apps to tinkering with algorithms, I enjoy turning abstract ideas into functional projects. It’s where logic meets imagination—and coffee fuels the magic.
+            BASKETBALL is my hobby to releast my stress and to make an exercise daily , iloved playing basketball.
           </Text>
         </View>
       </ScrollView>

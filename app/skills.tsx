@@ -18,19 +18,7 @@ export default function Skills() {
           />
           <Text style={styles.skillTitle}>🎨 Graphic Designing</Text>
           <Text style={styles.skillDescription}>
-          I craft visuals that speak louder than words! Using tools like Photoshop and Canva, I design logos, posters, and social media content—blending creativity with UI/UX principles to engage and inspire.
-          </Text>
-        </View>
-
-        <View style={styles.skillContainer}>
-          <Image 
-            source={require('../assets/COMPLET.jpg')}
-            style={styles.skillImage}
-            resizeMode="cover"
-          />
-          <Text style={styles.skillTitle}>💻 Computer Literacy</Text>
-          <Text style={styles.skillDescription}>
-          From troubleshooting software to mastering productivity suites (Microsoft Office, Google Workspace), I navigate OS systems, cloud platforms, and data management tools with ease. Tech hiccups? Consider them solved.
+         im building my self as a skilled in graphic design with online tools like Canva makes it easy to create professional and creative designs. Canva offers simple templates and features that help make eye-catching graphics for social media, marketing, and other projects. It helps me improve creativity and makes designing faster and more convenient.
           </Text>
         </View>
 
@@ -40,9 +28,9 @@ export default function Skills() {
             style={styles.skillImage}
             resizeMode="cover"
           />
-          <Text style={styles.skillTitle}>🚀 Programming</Text>
+          <Text style={styles.skillTitle}>vlogger</Text>
           <Text style={styles.skillDescription}>
-          I turn logic into action with Python, Java, and JavaScript. Building everything from simple calculators to dynamic web apps, I thrive on solving problems through clean code and algorithmic thinking.
+         im a vlogger and ilove what im doing and i believe that vlogging is also my passion.
           </Text>
         </View>
       </ScrollView>
