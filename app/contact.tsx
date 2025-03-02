@@ -20,7 +20,7 @@ export default function Contact() {
           <TouchableOpacity onPress={() => openURL('https://github.com/royparcero30')}>
             <Text style={styles.link}>GitHub</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => openURL('mailto:rparcero#gbox.ncf.edu.ph')}>
+          <TouchableOpacity onPress={() => openURL('mailto:rparcero@gbox.ncf.edu.ph')}>
             <Text style={styles.link}>Email</Text>
           </TouchableOpacity>
         </View>
