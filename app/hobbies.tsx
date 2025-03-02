@@ -13,7 +13,7 @@ export default function Hobbies() {
 
         <View style={styles.hobbyContainer}>
           <Image 
-            source={require('../assets/BASKETBALL.jpg')}  
+            source={require('../assets/hobbies.jpg')}  
             style={styles.hobbyImage}
             resizeMode="cover"
           />

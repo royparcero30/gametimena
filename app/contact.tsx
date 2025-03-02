@@ -7,7 +7,7 @@ export default function Contact() {
 
   return (
     <ImageBackground 
-      source={require('../assets/BLACKBG.jpg')}
+      source={require('../assets/me.jpg')}
       style={styles.container}
       resizeMode="cover"
     >

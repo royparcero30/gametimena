@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, ImageBackground } from "react-native";
 export default function About() {
   return (
     <ImageBackground
-      source={require("../assets/BLACKBG.jpg")}
+      source={require("../assets/me.jpg")}
       style={styles.container}
     >
       <View style={styles.textContainer}>
