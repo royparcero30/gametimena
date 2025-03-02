@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, Image, ImageBackground, ScrollView } from "reac
 export default function Hobbies() {
   return (
     <ImageBackground 
-      source={require('../assets/BLACKBG.jpg')}
+      source={require('../assets/tabagwang.jpg')}
       style={styles.container}
       resizeMode="cover"
     >

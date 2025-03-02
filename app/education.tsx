@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, Image, ScrollView, ImageBackground } from "reac
 export default function Education() {
   return (
     <ImageBackground 
-      source={require('../assets/BLACKBG.jpg')}  
+      source={require('../assets/NCF.jpg')}  
       style={styles.container}
       resizeMode="cover" 
     >

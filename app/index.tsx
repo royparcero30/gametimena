@@ -4,7 +4,7 @@ import { Link } from "expo-router";
 export default function Index() {
   return (
     <ImageBackground
-      source={require("../assets/BLACKBG.jpg")}
+      source={require("../assets/me.jpg")}
       style={styles.container}
     >
       <View style={styles.contentContainer}>

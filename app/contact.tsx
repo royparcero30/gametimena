@@ -1,13 +1,13 @@
 import { Text, View, StyleSheet, ImageBackground, TouchableOpacity, Linking } from "react-native";
 
 export default function Contact() {
-  const openURL = (url) => {
-    Linking.openURL(url);
+  const openURL = (URL) => {
+    Linking.openURL(URL);
   };
 
   return (
     <ImageBackground 
-      source={require('../assets/me.jpg')}
+      source={require('../assets/tabagwang.jpg')}
       style={styles.container}
       resizeMode="cover"
     >

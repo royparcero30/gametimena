@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, Image, ImageBackground, ScrollView } from "reac
 export default function Skills() {
   return (
     <ImageBackground 
-      source={require('../assets/BLACKBG.jpg')}
+      source={require('../assets/me.jpg')}
       style={styles.container}
       resizeMode="cover"
     >
