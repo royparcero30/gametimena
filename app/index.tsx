@@ -10,7 +10,7 @@ export default function Index() {
       <View style={styles.contentContainer}>
         <View style={styles.circlePic}>
           <Image
-            source={require("../assets/POGI.jpg")}
+            source={require("../assets/tabagwang.jpg")}
             style={styles.image}
           />
         </View>

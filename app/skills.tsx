@@ -12,7 +12,7 @@ export default function Skills() {
         
         <View style={styles.skillContainer}>
           <Image 
-            source={require('../assets/GRAPHIC.jpg')}
+            source={require('../assets/canva.jpg')}
             style={styles.skillImage}
             resizeMode="cover"
           />
@@ -24,7 +24,7 @@ export default function Skills() {
 
         <View style={styles.skillContainer}>
           <Image 
-            source={require('../assets/CODING.jpg')}
+            source={require('../assets/tabagwang.jpg')}
             style={styles.skillImage}
             resizeMode="cover"
           />
