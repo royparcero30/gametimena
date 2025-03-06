@@ -43,10 +43,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 40,
-    color: '#fff',
+    color: 'black',
   },
   hobbyContainer: {
-    backgroundColor: 'rgba(80,80,80,0.8)', // greyish tone
+    backgroundColor: 'rgba(0, 0, 0, 0.8)', // greyish tone
     padding: 20,
     borderRadius: 10,
     width: '80%',

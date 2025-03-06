@@ -73,10 +73,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 40,
-    color: '#fff',
+    color: 'black',
   },
   schoolContainer: {
-    backgroundColor: 'rgba(80,80,80,0.8)', // Greyish tone
+    backgroundColor: 'rgba(0, 0, 0, 0.8)', // Greyish tone
     padding: 20,
     borderRadius: 10,
     alignItems: 'center',

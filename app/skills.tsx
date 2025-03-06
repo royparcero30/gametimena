@@ -51,12 +51,12 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#fff',
+    color: 'black',
     textAlign: 'center',
     marginBottom: 40,
   },
   skillContainer: {
-    backgroundColor: 'rgba(80,80,80,0.8)', // Greyish tone
+    backgroundColor: 'rgba(0, 0, 0, 0.8)', // Greyish tone
     padding: 20,
     borderRadius: 10,
     width: '80%',
