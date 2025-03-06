@@ -1,12 +1,9 @@
-import { Text, View, StyleSheet, Image, ImageBackground } from "react-native";
+import { Text, View, StyleSheet, Image } from "react-native";
 import { Link } from "expo-router";
 
 export default function Index() {
   return (
-    <ImageBackground
-      source={require("../assets/me.jpg")}
-      style={styles.container}
-    >
+    <View style={styles.container}>
       <View style={styles.contentContainer}>
         <View style={styles.circlePic}>
           <Image
@@ -18,13 +15,14 @@ export default function Index() {
           Welcome to my expo-Website
         </Text>
       </View>
-    </ImageBackground>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#333", // Dark gray background
   },
   contentContainer: {
     flex: 1,

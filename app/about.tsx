@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, ImageBackground } from "react-native";
 export default function About() {
   return (
     <ImageBackground
-      source={require("../assets/me.jpg")}
+      source={require("../assets/hobbies.jpg")}
       style={styles.container}
     >
       <View style={styles.textContainer}>
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "#fff",
-    fontSize: 16,
+    fontSize: 20,
     textAlign: "center",
     lineHeight: 24,
   },

@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, Image, ScrollView, ImageBackground } from "reac
 export default function Education() {
   return (
     <ImageBackground 
-      source={require('../assets/NCF.jpg')}  
+      source={require('../assets/tabagwang.jpg')}  
       style={styles.container}
       resizeMode="cover" 
     >
@@ -34,10 +34,10 @@ export default function Education() {
 
         <View style={styles.schoolContainer}>
           <Image 
-            source={require('../assets/SAGURONG.jpg')}  
+            source={require('../assets/ACLC.jpg')}  
             style={styles.schoolLogo}
           />
-          <Text style={styles.schoolName}>🎓 denior High School</Text>
+          <Text style={styles.schoolName}>🎓 Senior High School</Text>
           <Text style={styles.schoolDescription}>
             I Graduated at ACLC NAGA in senior high.
           </Text>
